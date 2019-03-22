@@ -22,7 +22,7 @@ class BaseConfig extends Config(
   new BaseSubsystemConfig()
 )
 
-class DefaultConfig extends Config(new WithNBigCores(1) ++ new BaseConfig)
+class DefaultConfig extends Config(new WithNBigCores(2) ++ new BaseConfig)
 
 class DefaultBufferlessConfig extends Config(
   new WithBufferlessBroadcastHub ++ new WithNBigCores(1) ++ new BaseConfig)
